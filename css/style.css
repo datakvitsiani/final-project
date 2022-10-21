@@ -3,6 +3,7 @@
     background-image: url(../images/car-bg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    max-width: 1920px;
     width: 100%;
     height: 970px;
 }
@@ -128,10 +129,12 @@
     -ms-flex-pack: center;
     justify-content: center;
     background-color: lightslategrey;
+    text-align: justify;
     width: 100px;
     height: 60px;
     -webkit-box-shadow: 5px 5px 5px  grey;
     box-shadow: 5px 5px 5px  grey;
+    text-align: center;
 }
 .nav-li-items {
     font-family: 'Open Sans', sans-serif;
@@ -435,10 +438,10 @@
 .sect4 {
     
     width: 100%;
-    height: 581px;
+    height: 1000px;
     background-color: #F5F5F5;
     /* display: flex; */
-    /* align-items: center; */
+    /* align-items: baseline; */
     /* justify-content: space-evenly; */
 }
 .sect4-block {
@@ -602,30 +605,7 @@
     margin-left: 185px;
 }
 
-/* responsive */
- @media (max-width: 1920px) {
-    .burger-bar{
-        display: block;
-    }
-    .navigation {
-        display: none;
-    }
-    .navigation.navActive {
-        display: block;
-    }
-    section {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    }
-}
-@media (max-width: 1285.60px) {
-    .int-img1 {
-        display: none;
-    }
-    .sect3-tag {
-        width: 390px;
-    }
-}
+
 
 
 

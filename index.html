@@ -7,10 +7,13 @@
     <meta name="description" content="High class cars" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Data Kvitsiani" />
+    <meta name="facebook:title" content="Mercedes-Benz" />
+    <meta name="facebook;description" content="mercedes-benz website" />
     <title>Mercedes-Benz</title>
     <link rel="shortcut icon" href="images/Logo1.svg" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -21,8 +24,6 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -53,7 +54,7 @@
       </div>
       <div class="hdr-container2">
         <img src="images/AMG.svg" alt="amg logo" />
-        <h2 class="hdr-title1">Unleash the True Power</h2>
+        <h1 class="hdr-title1">Unleash the True Power</h1>
         <p class="hdr-tag1">
           The Mercedes-AMG GT combines the fascination of an authentic sports
           car with segment-specific technology leadership and high practicality.
@@ -67,8 +68,12 @@
     <!-- section 1 -->
     <section class="sect1" id="home">
       <div class="amg-exterior">
-        <img src="images/red-stripes1.svg" alt="red stripes" />
-        <img src="images/mercedes-red.png" alt="Mercedes-AMG" />
+        <img
+          class="red-strp1"
+          src="images/red-stripes1.svg"
+          alt="red stripes"
+        />
+        <img class="red-amg" src="images/mercedes-red.png" alt="Mercedes-AMG" />
         <div class="sect1-red-title">
           <p class="title1">SECOND TO NONE</p>
           <img class="red-line" src="images/red-line1.svg" alt="red line" />
@@ -107,7 +112,11 @@
         <img class="int-img1" src="images/interior1.png" alt="interior image" />
       </div>
       <div class="interior-images">
-        <img src="images/interior2.png" alt=" interior images" />
+        <img
+          class="amg-int1"
+          src="images/interior2.png"
+          alt=" interior images"
+        />
       </div>
     </section>
     <!-- section 3 -->
@@ -135,38 +144,49 @@
     </section>
     <!-- section 4 -->
     <section class="sect4" id="contact">
-      <div class="sect4-block">
-        <img src="images/AMG.svg" alt="amg logo" />
-        <h3 class="sect4-title">Get yours today!</h3>
-        <p class="sect4-tag">
-          The Mercedes-AMG GT is a racing icon that is second to none.
-        </p>
-        <p class="sect4-pre">PRE-ORDER NOW</p>
-      </div>
-      <div class="container-form">
-        <form action="" class="form-wraper">
-          <div class="left-block">
-            <textarea name="name" id="id" placeholder="description"></textarea>
-          </div>
-          <div class="right-block">
-            <input
-              type="text"
-              name="phone number"
-              id="userphone"
-              class="input-block"
-            />
-            <input type="text" name="name" id="username" class="input-block" />
-            <input
-              type="email"
-              name="email"
-              id="useremail"
-              class="input-block"
-            />
-            <button type="submit" class="btnWrapper" id="btnWrapper">
-              submit <i class="fa-solid fa-paper-plane"></i>
-            </button>
-          </div>
-        </form>
+      <div class="sect4-container">
+        <div class="sect4-block">
+          <img src="images/AMG.svg" alt="amg logo" />
+          <h3 class="sect4-title">Get yours today!</h3>
+          <p class="sect4-tag">
+            The Mercedes-AMG GT is a racing icon that is second to none.
+          </p>
+          <p class="sect4-pre">PRE-ORDER NOW</p>
+        </div>
+        <div class="container-form">
+          <form action="" class="form-wraper">
+            <div class="left-block">
+              <textarea
+                name="name"
+                id="id"
+                placeholder="description"
+              ></textarea>
+            </div>
+            <div class="right-block">
+              <input
+                type="text"
+                name="phone number"
+                id="userphone"
+                class="input-block"
+              />
+              <input
+                type="text"
+                name="name"
+                id="username"
+                class="input-block"
+              />
+              <input
+                type="email"
+                name="email"
+                id="useremail"
+                class="input-block"
+              />
+              <button type="submit" class="btnWrapper" id="btnWrapper">
+                submit <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
     <!-- footer -->
