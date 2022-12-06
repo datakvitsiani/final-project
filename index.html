@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/media.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -28,6 +29,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header class="hdr-bg">
@@ -38,16 +40,24 @@
           <p>
             <a class="hdr-pre-tag" href="#pre-order">PRE-ORDER NOW</a>
           </p>
-          <div class="nav-flex">
-            <nav class="navigation" id="navBar">
-              <ul>
-                <li><a class="nav-li-items" href="#home">HOME</a></li>
-                <li><a class="nav-li-items" href="#info">INFO</a></li>
-                <li><a class="nav-li-items" href="#contact">CONTACT</a></li>
+          <div class="navigation-wraper">
+            <nav class="navigation" id="navigation">
+              <ul class="ul-nav">
+                <li>
+                  <a class="li-tags" href="#home">Home</a>
+                </li>
+                <li>
+                  <a class="li-tags" href="#info">Info</a>
+                </li>
+                <li>
+                  <a class="li-tags" href="#contact">Contact us</a>
+                </li>
               </ul>
             </nav>
-            <div class="burger-bar" id="toggleBar">
-              <i class="fa-solid fa-bars"></i>
+            <div class="toggle-menu" id="toggleButton">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
             </div>
           </div>
         </div>
@@ -65,6 +75,27 @@
         <button class="clickMe" id="clickMe">PRE-ORDER NOW</button>
       </div>
     </header>
+    <!-- scroll to top -->
+    <section>
+      <button class="scroll-Top" id="scrollTop">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+    </section>
+    <!-- server info -->
+    <section>
+      <div class="filter-wraper">
+        <div class="search-block">
+          <h2 class="filter-title">Our Employees</h2>
+          <input
+            class="search-bar"
+            type="search"
+            id="filter"
+            name="searchUser"
+          />
+        </div>
+        <ul id="result" class="user-list"></ul>
+      </div>
+    </section>
     <!-- section 1 -->
     <section class="sect1" id="home">
       <div class="amg-exterior">
@@ -87,6 +118,14 @@
             brand AMG.
           </p>
         </div>
+      </div>
+    </section>
+    <!-- slider section -->
+    <section>
+      <div class="slider-wraper">
+        <button class="arrow-left arrow" id="arrow-left"><</button>
+        <button class="arrow-right arrow" id="arrow-right">></button>
+        <div class="slider-content" id="slider-content"></div>
       </div>
     </section>
     <!-- section 2 -->
@@ -119,8 +158,73 @@
         />
       </div>
     </section>
-    <!-- section 3 -->
+    <!-- accordion -->
     <section id="info">
+      <div class="acc-wraper">
+        <h2 class="acc-maintitle">info</h2>
+        <div class="acc-container">
+          <h3 class="acc-title">Mercedes-AMG GT: Info</h3>
+          <div class="acc-arrowdown">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <p class="acc-content">
+            The Mercedes-AMG GT (C190 / R190) is a grand tourer produced in
+            coupé and roadster bodystyles by German automobile manufacturer
+            Mercedes-AMG. The car was introduced on 9 September 2014 and was
+            officially unveiled to the public in October 2014 at the Paris Motor
+            Show. After the SLS AMG, it is the second sports car developed
+            entirely in-house by Mercedes-AMG. The Mercedes-AMG GT went on sale
+            in two variants (GT and GT S) in March 2015, while a GT3 racing
+            variant of the car was introduced in 2015. A high performance
+            variant called the GT R was introduced in 2016. A GT4 racing
+            variant, targeted at semi-professional drivers and based on the GT R
+            variant, was introduced in 2017. Recently, a new variant called the
+            AMG GT Black series has been released.
+          </p>
+        </div>
+        <div class="acc-container">
+          <h3 class="acc-title">Mercedes-AMG GT: History</h3>
+          <div class="acc-arrowdown">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <!-- <div class="acc-arrowup"><i class="fa-solid fa-chevron-up"></i></div> -->
+          <p class="acc-content">
+            The interior of the Mercedes-AMG GT was previewed on 16 April 2014.
+            The car made its debut on 9 September 2014 and was officially
+            unveiled to the public in October 2014 at the Paris Motor Show with
+            two engine power output options: the GT, with 340 kW (462 PS; 456
+            hp), and the GT S with 375 kW (510 PS; 503 hp). The GT generates 600
+            N⋅m (443 lb⋅ft) of torque, and the GT S generates 650 N⋅m (479
+            lb⋅ft) of torque. Shortly after its introduction, Mercedes-AMG CEO
+            at the time, Tobias Moers promised a Black Series variant of the
+            Mercedes-AMG GT. The new high performance variant was called the AMG
+            GT R.
+          </p>
+        </div>
+        <div class="acc-container">
+          <h3 class="acc-title">Mercedes-AMG GT: Features</h3>
+          <div class="acc-arrowdown">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <p class="acc-content">
+            The GT's exterior design was kept similar to that of the preceding
+            SLS AMG. It features the wide wheel arches, lower bodywork, and
+            fastback sloping roofline of the SLS AMG, but uses conventional
+            forward-opening doors instead of the iconic gullwing style pioneered
+            by the 300 SL in the 1950s. The large bonnet and slim windscreen
+            have been retained. The vehicle structure is made up of 93%
+            aluminium, with the front module base made up of magnesium.[17] The
+            exterior lead designer was Mark Fetherston, whose previous works
+            include the W176 A-Class, the CLA-Class, and SLS AMG.[1] The
+            interior, designed by Jan Kaul, features a large centre console and
+            decorative elements in a leather and carbon polymer design.[2] The
+            trunk offers room for a medium-sized suitcase.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- section 3 -->
+    <section>
       <div class="sect3-container">
         <img class="eng-img" src="images/engine1.jpg" alt="engine image" />
         <div class="engine-container">
@@ -153,38 +257,67 @@
           </p>
           <p class="sect4-pre">PRE-ORDER NOW</p>
         </div>
-        <div class="container-form">
-          <form action="" class="form-wraper">
-            <div class="left-block">
-              <textarea
-                name="name"
-                id="id"
-                placeholder="description"
-              ></textarea>
+        <div class="sect4-valForm">
+          <form action="" id="registration" method="get">
+            <div>
+              <input
+                class="userinfo"
+                type="text"
+                name="username"
+                id="usernamefield"
+                placeholder="Enter username.."
+              />
+              <span class="error-text" id="error_username"></span>
             </div>
-            <div class="right-block">
+
+            <div>
               <input
-                type="text"
-                name="phone number"
-                id="userphone"
-                class="input-block"
+                class="userinfo"
+                type="password"
+                name="pasww"
+                id="passwordfield"
+                placeholder="Enter password"
               />
+              <div class="eye-icon">
+                <i class="fa-solid fa-eye" id="toggleIcon"></i>
+              </div>
+              <span class="error-text" id="error_pasww"></span>
+            </div>
+            <div>
               <input
-                type="text"
-                name="name"
-                id="username"
-                class="input-block"
+                class="userinfo"
+                type="password"
+                name="pasww2"
+                id="passwordfield2"
+                placeholder="Repeat Password.."
               />
+              <div class="eye-icon">
+                <i class="fa-solid fa-eye" id="toggleIcon2"></i>
+              </div>
+              <span class="error-text" id="error_pasww2"></span>
+            </div>
+            <div class="emailValidation">
               <input
                 type="email"
-                name="email"
-                id="useremail"
-                class="input-block"
+                id="email"
+                placeholder="email.."
+                name="myemail"
               />
-              <button type="submit" class="btnWrapper" id="btnWrapper">
-                submit <i class="fa-solid fa-paper-plane"></i>
-              </button>
+              <span id="text"></span>
             </div>
+            <div>
+              <input type="radio" name="gender" value="male" id="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" value="female" id="female" />
+              <label for="female">Female</label>
+              <span class="error-text" id="error_gender"></span>
+            </div>
+            <div>
+              <input type="checkbox" name="agree" id="agree" />
+              <label for="agree">I agree terms and conditions</label>
+              <span class="error-text" id="error_agree"></span>
+            </div>
+            <button class="submit-btn" type="submit">Submit</button>
           </form>
         </div>
       </div>
@@ -201,6 +334,5 @@
         reserved.
       </p>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
