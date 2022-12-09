@@ -308,3 +308,9 @@
         width: 200px;
     }
 }
+@media (max-width: 480px) {
+    .filter-title {
+        max-width: 200px;
+        font-size: 20px;
+    }
+}
